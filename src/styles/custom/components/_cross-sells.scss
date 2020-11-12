@@ -1,0 +1,15 @@
+/* Cross Sells */
+
+.cross-sells .quantity {
+  display: inline-block;
+  width: 40%;
+}
+
+.cross-sells .quantity label {
+  display: none;
+}
+
+.cross-sells .mme_qty {
+  max-width: 100%;
+  display: inline !important;
+}

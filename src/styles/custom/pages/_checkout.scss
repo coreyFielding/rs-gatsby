@@ -1,0 +1,93 @@
+// Cart specific css
+
+// Make stripe fields same as normal input fields
+
+.wc-stripe-elements-field {
+  @extend .form-control;
+}
+
+.woocommerce-input-wrapper {
+  display: block;
+  width: 100%;
+}
+
+.form-row label {
+  color: #3C4858;
+  font-size: 0.875rem;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 0.5rem;
+  width: 100%;
+}
+
+.shipping_address_new {
+  display: none;
+}
+
+.wc_payment_method img {
+  max-width: 200px;
+}
+
+.wc-stripe-elements-field,
+.wc-stripe-iban-element-field {
+  width: 100% !important;
+  margin-bottom: 1.25rem;
+}
+
+.woocommerce-checkout #payment ul.payment_methods .stripe-card-group {
+  width: 100%;
+}
+
+#wc-stripe-cc-form  {
+  .form-row {
+    @extend .mb-3;
+    label {
+      margin-bottom: 0;
+    }
+
+    &.form-row-wide {
+      width:60%;
+      @extend .d-inline-block;
+      @extend .pr-3;
+    }
+
+    &.form-row-first, &.form-row-last {
+      width:20%;
+      @extend .d-inline-block;
+      @extend .pr-3;
+    }
+  }
+
+  // Card inputs
+  iframe {
+    top:10px;
+    left:10px;
+    position: relative;
+  }
+}
+
+
+@include media-breakpoint-down(sm) {
+  #wc-stripe-cc-form  {
+    .form-row {
+      &.form-row-wide {
+        width:100%;
+      }
+    }
+  }
+  #wc-stripe-cc-form  {
+    .form-row {
+      &.form-row-first, &.form-row-last {
+        width:100%;
+      }
+    }
+  }
+}
+
+
+.wc-saved-payment-methods {
+  @extend .ml-4;
+  @extend .mb-4;
+  @extend .list-unstyled;
+}
+

@@ -1,0 +1,15 @@
+// Highlight box variations
+
+@each $color,
+$value in $theme-colors {
+  .highlight-#{$color} {
+    @include alert-variant(theme-color-level($color, $alert-bg-level), theme-color-level($color, $alert-border-level), theme-color-level($color, $alert-color-level));
+    @extend .rounded;
+    @extend .alert-#{$color};
+    @extend .p-4;
+    @extend .border;
+    @extend .border-#{$color};
+    @extend .border-2;
+    font-size:1.15rem;
+  }
+}

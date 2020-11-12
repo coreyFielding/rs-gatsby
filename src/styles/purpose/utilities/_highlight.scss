@@ -1,0 +1,13 @@
+// Highlight variants
+@each $color,
+$value in $theme-colors {
+  .highlight-#{$color} {
+    color: $color;
+    background-color: $color;
+    @extend .rounded;
+    @extend .p-4;
+    @extend .border;
+    @extend .border-2;
+    @extend .alert-#{$color};
+  }
+}

@@ -1,0 +1,8 @@
+// Badge level styles
+
+@each $level, $value in $levels {
+  .badge-level-#{$level} {
+    background-color: $value;
+    color: $white;
+  }
+}

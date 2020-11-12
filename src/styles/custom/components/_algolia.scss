@@ -1,0 +1,19 @@
+// Algolia styling
+
+.ais-Hits-list {
+  padding:0;
+  list-style: none;
+}
+
+.ais-RefinementList-list {
+  list-style: none;
+  padding: 0;
+}
+
+.ais-Hits--empty {
+  @extend .p-4;
+  @extend .m-4;
+  @extend .alert;
+  @extend .alert-danger;
+  @extend .text-center;
+}

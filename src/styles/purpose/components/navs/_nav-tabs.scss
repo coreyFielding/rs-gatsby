@@ -1,0 +1,35 @@
+//
+// Nav tabs
+//
+
+
+.nav-tabs .nav-item .nav-link {
+    padding: .75rem 1rem;
+    transition: color .35s ease, border-color .35s ease;
+    border: 0;
+    border-bottom: 2px solid rgba(255, 255, 255, 0);
+
+    &.active {
+        color: theme-color("primary") !important;
+        border-color: theme-color("primary");
+        background-color:theme-color("white") !important;
+        @extend .shadow;
+    }
+
+    &:not(.active) {
+        color: $gray-700;
+        background-color: #bbc4cf;
+        color: $white;
+        opacity: 0.75;
+
+        &:hover {
+            // color: $gray-700;
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+  .nav-tabs .nav-item {
+      width:100%;
+  }
+}

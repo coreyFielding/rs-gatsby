@@ -1,0 +1,28 @@
+/* Omnisearch Overrides */
+
+.omnisearch .omnisearch-suggestions {
+  min-height: 40vh;
+  height: 40vh;
+  overflow: scroll;
+}
+
+@media screen and (max-width:576px) {
+  .omnisearch.show {
+    -webkit-transform: translateY(50px);
+    -ms-transform: translateY(50px);
+    transform: translateY(50px);
+  }
+  .omnisearch-open {
+    position: fixed;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+  }
+  .omnisearch-suggestions {
+    overflow: scroll;
+    height: 50vh;
+  }
+  .omnisearch-suggestions ul {
+    margin-bottom: 20px !important;
+  }
+}

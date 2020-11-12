@@ -1,0 +1,15 @@
+/* BlockUI Spinner */
+.blockUI, .ajax-loader {
+  background-image: url('https://mathsmadeeasy.co.uk/wp-content/themes/mme/assets/img/icons/mme/loading.gif') !important;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  background-color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.ajax-loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}

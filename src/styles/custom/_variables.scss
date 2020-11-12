@@ -1,0 +1,63 @@
+// Variables
+//
+// Variables should follow the `$component-state-property-size` formula for
+// consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
+// Skins
+//
+// We recommend that all the variables that are staying at the core of your product's styleguide (colors, typography) to be separated in a custom skin
+// you can start by using one of the pre-built ones or, simply, create a new one
+// learn more about how to create your skin by reading the theme's documentation.
+//
+// Below you can find 3 pre-defined skins. You can uncomment any one of them and compile Sass using the build tools
+// @import "../skins/default/dark";
+// @import "../skins/blue/light";
+// @import "../skins/blue/dark";
+// Fonts
+//
+// uncomment and replace the $font and $font-family-custom-sans-serif value with any URL and font family name from Google Fonts
+//
+$font-family-custom-sans-serif: "Proxima-Nova", sans-serif !default;
+$font-family-base: $font-family-custom-sans-serif !default;
+// Custom variables
+//
+// Need additional variables? Simply create it here and make sure you follow the naming formula explained at the top of this file.
+$primary: #7cb447;
+$dark: #022034;
+$info: #10a6f3;
+// Custom colour variables
+// Colours
+$pink: #d26c6c;
+$blue: #85b0c2;
+$yellow: #fcd118;
+$highlight: #e6f2f6;
+$navy: #042840;
+// Levels
+$ks1: #aa57ff; // 1 times table
+$ks2: #f95d27; // 2 times table
+$ks3: #10a6f3; // 7 times table
+$gcsemaths: #f43364; // 12 times table
+$gcsescience: #2730e9; // 4 times table
+$gcseenglish: #EF7674; // 10 times table
+$alevelmaths: #00d865; // 5 times table
+$alevelbiology: #00bfa8; // 6 times table
+$alevelchemistry:#f21cc2; // 9 times table
+$alevelphysics: #ffae00; // 3 times table
+$alevelenglish: #2730e9; // 4 times table
+$allpastpapers: #bd0000; // 8 times table
+$transparent: transparent;
+// Brands
+$facebook: #3b5998;
+$twitter:#1da1f2;
+$youtube: #ff0000;
+$tumblr: #35465C;
+$whatsapp: #25d366;
+$brand-colors: ( "tumblr": $tumblr, "whatsapp": $whatsapp);
+$theme-colors: ( "ks1": $ks1, "ks2": $ks2, "ks3": $ks3, "gcsemaths": $gcsemaths, "gcsescience": $gcsescience, "gcseenglish": $gcseenglish, "alevelmaths": $alevelmaths, "alevelbiology": $alevelbiology, "alevelchemistry": $alevelchemistry, "alevelphysics": $alevelphysics, "alevelenglish": $alevelenglish, "allpastpapers": $allpastpapers, "highlight": $highlight, "yellow": $yellow, "blue": $blue, "pink": $pink, "navy": $navy, "transparent": $transparent);
+// Font Family
+$font: 'Proxima-Nova';
+// Container widths override
+$container-max-widths:( sm: 540px, md: 720px, lg: 960px, xl: 1470px);
+$bg-soft-bg-level: -10 !default;
+// Display size
+$display5-size : 2.5rem;
+$display6-size : 1.5rem;

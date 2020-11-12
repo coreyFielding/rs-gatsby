@@ -1,0 +1,62 @@
+// General woocommerce css
+
+.onsale {
+  @extend .bg-primary;
+  @extend .py-2;
+  @extend .px-3;
+  @extend .rounded;
+  @extend .lead;
+  @extend .text-white;
+  @extend .position-absolute;
+  @extend .zindex-200;
+}
+
+
+// Reviews
+.woocommerce p.stars a {
+  position: relative;
+  height: 1em;
+  width: 1em;
+  text-indent: -999em;
+  display: inline-block;
+  text-decoration: none;
+  color:theme-color("yellow");
+}
+
+.woocommerce p.stars a::before {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1em;
+  height: 1em;
+  line-height: 1;
+  font-family: "Font Awesome 5 Pro";
+  content: "\f005";
+  text-indent: 0
+}
+
+.woocommerce p.stars a:hover~a::before {
+  font-weight:300;
+}
+
+.woocommerce p.stars:hover a::before {
+  font-weight:900;
+}
+
+.woocommerce p.stars.selected a.active::before {
+  font-weight:900;
+}
+
+.woocommerce p.stars.selected a.active~a::before {
+  font-weight:300;
+}
+
+.woocommerce p.stars.selected a:not(.active)::before {
+  font-weight:900;
+}
+
+/* hide default addresses on thankyou page */
+.mme_thankyou-container .woocommerce-customer-details {
+  display: none;
+}

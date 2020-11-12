@@ -1,0 +1,19 @@
+/* Review Score Shortcode */
+
+.reviews-average {
+  line-height: 2rem;
+}
+
+.reviews-average img {
+  max-width: 130px;
+  margin-left: 10px;
+}
+
+/* Star Ratings */
+.full-stars {
+  position: absolute;
+  left: 0;
+  top: 0;
+  white-space: nowrap;
+  overflow: hidden;
+}

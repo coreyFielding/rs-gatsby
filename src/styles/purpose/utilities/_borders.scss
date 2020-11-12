@@ -1,0 +1,55 @@
+//
+// Border
+//
+
+.border-sm { border-width: $border-width-sm !important;}
+.border-md { border-width: $border-width-md !important;}
+
+
+// Border style
+.border-dashed { border-style: dashed !important; }
+.border-dotted { border-style: dotted !important; }
+.border-groove { border-style: groove !important; }
+
+// Border radius
+.rounded-left-pill {
+    @include border-left-radius($rounded-pill !important);
+}
+
+.rounded-right-pill {
+    @include border-right-radius($rounded-pill !important);
+}
+
+
+// Widths
+
+@each $border-width, $value in $border-widths {
+    .border-#{ $border-width} {
+        border-width: $value !important;
+    }
+}
+
+
+// Custom border hover states
+.border-hover-1:hover {
+    border-width: 1px !important
+}
+
+.border-hover-2:hover {
+    border-width: 2px !important
+}
+
+.border-hover-3:hover {
+    border-width: 3px !important
+}
+
+.border-hover-4:hover {
+    border-width: 4px !important
+}
+
+@each $color,
+$value in $theme-colors {
+    .border-hover-#{$color}:hover {
+        border-color: $value !important;
+    }
+}

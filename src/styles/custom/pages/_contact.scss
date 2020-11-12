@@ -1,0 +1,205 @@
+// Contact Form 7 Overrides
+div.wpcf7 {
+  margin: 0;
+  padding: 0;
+}
+
+div.wpcf7 .screen-reader-response {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  width: 1px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.wpcf7-form-control-wrap {
+  position: relative;
+}
+
+span.wpcf7-not-valid-tip {
+
+  font-size: 1em;
+  font-weight: normal;
+  display: block;
+}
+
+.use-floating-validation-tip span.wpcf7-not-valid-tip {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  z-index: 100;
+
+  background: #fff;
+  padding: .2em .8em;
+}
+
+span.wpcf7-list-item {
+  display: inline-block;
+  margin: 0 0 0 1em;
+}
+
+span.wpcf7-list-item-label::before,
+span.wpcf7-list-item-label::after {
+  content: " ";
+}
+
+.wpcf7-display-none {
+  display: none;
+}
+
+div.wpcf7 .ajax-loader {
+  visibility: hidden;
+  display: inline-block;
+}
+
+div.wpcf7 .ajax-loader.is-active {
+  visibility: visible;
+}
+
+div.wpcf7 div.ajax-error {
+  display: none;
+}
+
+div.wpcf7 .placeheld {
+  color: #888;
+}
+
+div.wpcf7 input[type="file"] {
+  cursor: pointer;
+}
+
+div.wpcf7 input[type="file"]:disabled {
+  cursor: default;
+}
+
+div.wpcf7 .wpcf7-submit:disabled {
+  cursor: not-allowed;
+}
+
+// Contact form styling
+
+// Gravity forms inherit bootstrap 4 styling
+/** Gravity Forms */
+//
+//.gform_wrapper form {
+//    margin-bottom: 0;
+//}
+//
+//.gform_wrapper ul {
+//    @extend .list-unstyled;
+//}
+//
+//.gform_wrapper li {
+//    @extend .form-group;
+//}
+//
+//.gform_wrapper .gfield_required {
+//    padding-left: 1px;
+//    color: $danger;
+//}
+//
+//.gform_wrapper input[type="email"],
+//.gform_wrapper input[type="date"],
+//.gform_wrapper input[type="datetime"],
+//.gform_wrapper input[type="datetime-local"],
+//.gform_wrapper input[type="month"],
+//.gform_wrapper input[type="number"],
+//.gform_wrapper input[type="password"],
+//.gform_wrapper input[type="search"],
+//.gform_wrapper input[type="tel"],
+//.gform_wrapper input[type="text"],
+//.gform_wrapper input[type="time"],
+//.gform_wrapper input[type="week"],
+//.gform_wrapper input[type="url"],
+//.gform_wrapper select,
+//.gform_wrapper textarea,
+input[type=text],
+input[type=search],
+input[type=url],
+input[type=tel],
+input[type=number],
+input[type=range],
+input[type=date],
+input[type=month],
+input[type=week],
+input[type=time],
+input[type=datetime],
+input[type=datetime-local],
+input[type=color],
+input[type=email],
+input[type=file],
+input[type=submit],
+select,
+textarea {
+  @extend .form-control;
+}
+
+//.gform_wrapper .button,
+input[type=submit] {
+  @extend .btn;
+  @extend .btn-primary;
+}
+
+//.gform_wrapper .gfield_error {
+//    .gfield_label {
+//        @extend .alert-danger;
+//    }
+//    input,
+//    select,
+//    textarea {
+//        @extend .alert-danger;
+//    }
+//}
+
+.validation_error,
+.wpcf7-validation-errors,
+.wpcf7-not-valid-tip {
+  @extend .alert;
+  @extend .alert-danger;
+}
+
+.wpcf7-form-control-wrap,
+div.wpcf7-response-output {
+  @extend .mt-2;
+  @extend .d-block;
+}
+
+.wpcf7-not-valid-tip {
+  @extend .w-100;
+  @extend .mt-2;
+  @extend .d-inline-block;
+}
+
+.wpcf7-mail-sent-ok {
+  @extend .alert;
+  @extend .alert-success;
+  @extend .mt-4;
+  @extend .mb-0;
+}
+
+.screen-reader-response {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  width: 1px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.validation_message {
+  display: none;
+}
+
+.gfield_label,
+label {
+  @extend .form-control-label;
+}
+
+.hidden_label label {
+  display: none;
+}

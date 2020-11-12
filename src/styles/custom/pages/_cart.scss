@@ -1,0 +1,27 @@
+// Cart custom css
+td.product-quantity > div > label {
+  display:none;
+}
+
+.woocommerce-cart .woocommerce {
+  background-color: #eff2f7 !important
+}
+
+.woocommerce-cart .quantity {
+  display: inline;
+}
+
+.woocommerce-cart .quantity .qty {
+  max-width:70px
+}
+
+.woocommerce-cart .quantity input::-webkit-outer-spin-button,
+.woocommerce-cart .quantity input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.product-thumbnail img {
+  max-width:100px;
+  max-height: 100px;
+}

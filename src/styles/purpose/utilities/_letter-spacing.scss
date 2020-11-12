@@ -1,0 +1,6 @@
+// Letter spacing
+@each $letter-space in $letter-spaces {
+  .letter-space-#{ $letter-space} {
+    letter-spacing: $letter-space;
+  }
+}

@@ -1,0 +1,78 @@
+// Single product page CSS
+
+
+// Variations overrides
+.select_box_label {
+
+  .select_option {
+    @extend .mb-1;
+    font-size: 1rem;
+    @extend .border-2;
+    padding: 0;
+    background-color: $light;
+    color: $dark;
+
+    .yith_wccl_value {
+      height:auto!important;
+      @extend .hover-shadow;
+      @extend .cursor-pointer;
+      font-weight: $font-weight-bold;
+      padding:0.5rem 1rem;
+    }
+  }
+}
+
+
+.select_box:not( .on_ptab ) .select_option:hover, .select_option.selected {
+  border-color:$primary !important;
+  @extend .shadow-sm;
+}
+
+.single_variation {
+  @extend .mb-4;
+}
+
+// Style answers tab
+#answers-tab:not(.active) {
+  @extend .bg-dark;
+}
+
+
+// Discount Pricing Styling
+
+.price {
+  del {
+    color:red;
+    font-size: 1.3rem;
+  }
+  ins {
+    text-decoration:none;
+    span {
+      @extend .text-primary;
+    }
+  }
+}
+
+.single-product .cart .amount {
+  @extend .h2;
+  @extend .text-muted;
+  @extend .font-weight-normal;
+}
+
+// TM Extra Product Options
+.tm-final-totals {
+  @extend .h5;
+}
+.tm-hidden, .tc-hidden {
+  @extend .d-none;
+}
+.tm-epo-element-label {
+  @extend .text-lg;
+}
+.tc-row {
+  @extend .mb-3;
+}
+.tm-error {
+  @extend .alert;
+  @extend .alert-danger;
+}

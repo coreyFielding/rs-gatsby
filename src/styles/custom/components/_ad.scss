@@ -1,0 +1,19 @@
+// Add SCSS
+
+.mme_ad_element img {
+  height:auto;
+  max-width:100%;
+}
+
+
+@include media-breakpoint-up(lg) {
+  .mme_ad_element img {
+    max-width:945px;
+    width:100%;
+  }
+}
+
+// Have insbygoogle inherit .container
+.adsbygoogle {
+  @extend .container;
+}

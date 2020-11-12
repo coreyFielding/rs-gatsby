@@ -1,0 +1,30 @@
+// Body styles
+body {
+  padding-top: 135px
+}
+
+@include media-breakpoint-down(lg) {
+  body {
+    padding-top: 135px
+  }
+}
+@include media-breakpoint-down(md) {
+  body {
+    padding-top: 93px
+  }
+
+}
+@include media-breakpoint-down(sm) {
+  body {
+    padding-top: 46px
+  }
+}
+@include media-breakpoint-up(lg) {
+  body.transparent-header-active {
+    padding-top: 0
+  }
+}
+
+body.no-scroll {
+  overflow: hidden;
+}
